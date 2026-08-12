@@ -1,0 +1,1061 @@
+/* =========================================
+   Global Reset
+========================================= */
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+html {
+        scroll-behavior: smooth;
+        background: #080d1c;
+}
+
+body {
+        background: #080d1c;
+        color: white;
+        font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   Header
+========================================= */
+
+header {
+        background: #080d1c;
+        color: white;
+
+        padding: 15px 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        border-bottom: 1px solid #1e293b;
+}
+
+header h1 {
+        margin: 0;
+}
+
+nav {
+        display: flex;
+        gap: 20px;
+}
+
+nav a {
+        color: white;
+        text-decoration: none;
+
+        transition: 0.3s;
+}
+
+nav a:hover {
+        color: #36c8e8;
+}
+
+
+/* =========================================
+   Sections
+========================================= */
+
+section {
+        min-height: 100vh;
+
+        padding: 50px;
+
+        scroll-margin-top: 80px;
+
+        background: #080d1c;
+}
+
+
+/* =========================================
+   About Section
+========================================= */
+
+#about {
+        padding: 80px 50px;
+
+        display: flex;
+        align-items: center;
+}
+
+.about-container {
+        width: 100%;
+        max-width: 1200px;
+
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 60px;
+}
+
+
+/* About Content */
+
+.about-content {
+        flex: 1;
+        max-width: 650px;
+}
+
+
+/* Availability */
+
+.availability {
+        display: inline-flex;
+        align-items: center;
+
+        padding: 8px 15px;
+
+        border: 1px solid #2f9d7b;
+        border-radius: 30px;
+
+        color: #55e6b0;
+
+        font-size: 14px;
+}
+
+.status-dot {
+        width: 8px;
+        height: 8px;
+
+        margin-right: 8px;
+
+        background: #55e6b0;
+
+        border-radius: 50%;
+}
+
+
+/* About Heading */
+
+.about-content h2 {
+        margin: 25px 0 20px;
+
+        font-size: 55px;
+        line-height: 1.1;
+        font-weight: 700;
+}
+
+.about-content h2 span {
+        background: linear-gradient(90deg,
+                        #7565ff,
+                        #36c8e8);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+
+/* Developer Title */
+
+.about-content h3 {
+        margin-bottom: 20px;
+
+        color: #9ba6bd;
+
+        font-size: 18px;
+        font-weight: 400;
+}
+
+.about-content h3 strong {
+        color: white;
+}
+
+
+/* About Description */
+
+.about-content p {
+        margin-bottom: 15px;
+
+        color: #8e9ab2;
+
+        font-size: 16px;
+        line-height: 1.8;
+}
+
+
+/* =========================================
+   About Buttons
+========================================= */
+
+.about-buttons {
+        display: flex;
+        gap: 15px;
+
+        margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 13px 25px;
+
+        border-radius: 8px;
+
+        text-decoration: none;
+
+        font-size: 15px;
+        font-weight: 600;
+
+        transition: 0.3s;
+}
+
+.primary-btn {
+        color: #07101b;
+
+        background: linear-gradient(90deg,
+                        #7565ff,
+                        #36c8e8);
+}
+
+.secondary-btn {
+        color: white;
+
+        border: 1px solid #30394d;
+
+        background: transparent;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+        opacity: 0.85;
+}
+
+
+/* =========================================
+   Social Links
+========================================= */
+
+.social-links {
+        display: flex;
+        gap: 15px;
+
+        margin-top: 35px;
+}
+
+.social-links a {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #30394d;
+        border-radius: 8px;
+
+        color: #9ba6bd;
+
+        text-decoration: none;
+
+        font-size: 18px;
+
+        transition: 0.3s;
+}
+
+.social-links a:hover {
+        color: white;
+        border-color: #36c8e8;
+
+        transform: translateY(-3px);
+}
+
+
+/* =========================================
+   Profile Image
+========================================= */
+
+.about-image {
+        width: 410px;
+        height: 410px;
+
+        padding: 5px;
+
+        flex-shrink: 0;
+
+        border-radius: 25px;
+
+        background: linear-gradient(135deg,
+                        #7565ff,
+                        #36c8e8);
+}
+
+.about-image img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+
+        border-radius: 20px;
+
+        background: #151b2b;
+}
+
+
+/* =========================================
+   Skills Section
+========================================= */
+
+#skills {
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 60px 50px;
+}
+
+#skills>h2 {
+        margin-bottom: 30px;
+}
+
+
+/* Skills Main Grid */
+
+.skills-container {
+        width: 100%;
+        max-width: 1100px;
+
+        margin: 0 auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(6, 1fr);
+
+        gap: 18px;
+}
+
+
+/* Skill Categories */
+
+.skill-category {
+        padding: 20px;
+
+        background: #111827;
+
+        border: 1px solid #30394d;
+        border-radius: 12px;
+
+        text-align: center;
+}
+
+
+/* First three categories */
+
+.skill-category:nth-child(1),
+.skill-category:nth-child(2),
+.skill-category:nth-child(3) {
+        grid-column: span 2;
+}
+
+
+/* Database & Tools */
+
+.skill-category:nth-child(4),
+.skill-category:nth-child(5) {
+        grid-column: span 3;
+}
+
+
+/* Category Heading */
+
+.skill-category h3 {
+        margin-bottom: 18px;
+
+        color: white;
+
+        font-size: 17px;
+}
+
+
+/* Skills Grid */
+
+.skills-grid {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+}
+
+
+/* Individual Skill */
+
+.skill {
+        width: 85px;
+        min-height: 85px;
+
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+
+        background: #080d1c;
+
+        border: 1px solid #30394d;
+        border-radius: 8px;
+
+        color: #9ba6bd;
+
+        transition: 0.3s;
+}
+
+
+/* Skill Icons */
+
+.skill i {
+        font-size: 30px;
+}
+
+
+/* Skill Names */
+
+.skill span {
+        font-size: 12px;
+
+        text-align: center;
+
+        line-height: 1.2;
+}
+
+
+/* Skill Hover */
+
+.skill:hover {
+        transform: translateY(-4px);
+
+        border-color: #36c8e8;
+
+        color: white;
+}
+
+
+/* =========================================
+   Font Awesome Skill Icon Colors
+========================================= */
+
+/* Python */
+
+.skill .fa-python {
+        color: #3776ab;
+}
+
+
+/* JavaScript */
+
+.skill .fa-js {
+        color: #f7df1e;
+}
+
+
+/* React */
+
+.skill .fa-react {
+        color: #61dafb;
+}
+
+
+/* HTML */
+
+.skill .fa-html5 {
+        color: #e34f26;
+}
+
+
+/* CSS */
+
+.skill .fa-css3-alt {
+        color: #1572b6;
+}
+
+
+/* Bootstrap */
+
+.skill .fa-bootstrap {
+        color: #7952b3;
+}
+
+
+/* Git */
+
+.skill .fa-git-alt {
+        color: #f05032;
+}
+
+
+/* GitHub */
+
+.skill .fa-github {
+        color: #ffffff;
+}
+
+
+/* Dart */
+
+.skill .fa-code {
+        color: #0175c2;
+}
+
+
+/* Database */
+
+.skill .fa-database {
+        color: #336791;
+}
+
+
+/* Firebase */
+
+.skill .fa-fire {
+        color: #ffca28;
+}
+
+
+/* Supabase */
+
+.skill .fa-cloud {
+        color: #3ecf8e;
+}
+
+
+/* Server / DRF */
+
+.skill .fa-server {
+        color: #8a8a8a;
+}
+
+
+/* FastAPI */
+
+.skill .fa-bolt {
+        color: #009688;
+}
+
+
+/* Flutter */
+
+.skill .fa-mobile-screen-button {
+        color: #02569b;
+}
+
+
+/* =========================================
+   Projects Section
+========================================= */
+
+#projects {
+        text-align: center;
+}
+
+.projects-container {
+        display: flex;
+
+        justify-content: center;
+
+        gap: 30px;
+
+        flex-wrap: wrap;
+
+        margin-top: 30px;
+}
+
+.project-card {
+        width: 320px;
+
+        padding: 25px;
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+
+        background: #111827;
+
+        border: 1px solid #30394d;
+        border-radius: 10px;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+        margin-bottom: 15px;
+}
+
+.project-card p {
+        margin-bottom: 15px;
+
+        color: #9ba6bd;
+
+        line-height: 1.6;
+}
+
+
+/* Project Buttons */
+
+.project-buttons {
+        display: flex;
+
+        gap: 10px;
+
+        margin-top: auto;
+}
+
+.project-btn {
+        display: inline-flex;
+        align-items: center;
+
+        gap: 8px;
+
+        padding: 10px 18px;
+
+        color: #07101b;
+
+        background: linear-gradient(90deg,
+                        #7565ff,
+                        #36c8e8);
+
+        text-decoration: none;
+
+        border-radius: 5px;
+
+        transition: 0.3s;
+}
+
+.project-btn:hover {
+        opacity: 0.85;
+}
+
+
+/* =========================================
+   Experience Section
+========================================= */
+/* =========================================
+   Experience Section
+========================================= */
+
+#experience {
+        text-align: center;
+}
+
+#experience>h2 {
+        margin-bottom: 30px;
+}
+
+
+/* Experience Card */
+
+.experience-card {
+        width: 100%;
+        max-width: 1100px;
+
+        margin: 0 auto;
+
+        padding: 28px;
+
+        background: #111827;
+
+        border: 1px solid #30394d;
+        border-radius: 16px;
+
+        text-align: left;
+}
+
+
+/* Experience Header */
+
+.experience-header {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 25px;
+
+        margin-bottom: 15px;
+}
+
+
+/* Job Title */
+
+.experience-title h3 {
+        margin-bottom: 6px;
+
+        color: white;
+
+        font-size: 20px;
+}
+
+
+/* Company */
+
+.experience-title p {
+        color: #8e9ab2;
+
+        font-size: 14px;
+}
+
+
+/* Date Badge */
+
+.experience-date {
+        flex-shrink: 0;
+
+        padding: 7px 12px;
+
+        color: #36c8e8;
+
+        background: #102d3a;
+
+        border-radius: 6px;
+
+        font-size: 12px;
+
+        font-weight: 600;
+
+        letter-spacing: 0.5px;
+}
+
+
+/* Experience List */
+
+.experience-details {
+        margin-top: 10px;
+
+        padding-left: 20px;
+}
+
+
+/* Experience Bullet */
+
+.experience-details li {
+        margin-bottom: 12px;
+
+        padding-left: 5px;
+
+        color: #9ba6bd;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+}
+
+
+/* Bullet Color */
+
+.experience-details li::marker {
+        color: #7565ff;
+}
+
+
+/* =========================================
+   Mobile Experience
+========================================= */
+
+@media (max-width: 600px) {
+
+        .experience-card {
+                padding: 20px;
+        }
+
+        .experience-header {
+                flex-direction: column;
+
+                gap: 12px;
+        }
+
+        .experience-date {
+                align-self: flex-start;
+        }
+
+        .experience-title h3 {
+                font-size: 18px;
+        }
+
+        .experience-details {
+                padding-left: 18px;
+        }
+
+        .experience-details li {
+                font-size: 14px;
+        }
+
+}
+
+
+/* =========================================
+   Contact Section
+========================================= */
+
+#contact {
+        text-align: center;
+}
+
+.contact-links {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 25px;
+
+        margin-top: 30px;
+}
+
+.contact-links a {
+        width: 55px;
+        height: 55px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #30394d;
+        border-radius: 10px;
+
+        color: #9ba6bd;
+
+        text-decoration: none;
+
+        font-size: 25px;
+
+        transition: 0.3s;
+}
+
+.contact-links a:hover {
+        color: white;
+
+        border-color: #36c8e8;
+
+        transform: translateY(-5px);
+}
+
+
+/* =========================================
+   Footer
+========================================= */
+
+footer {
+        padding: 25px;
+
+        text-align: center;
+
+        color: #8e9ab2;
+
+        background: #080d1c;
+
+        border-top: 1px solid #1e293b;
+}
+
+
+/* =========================================
+   Responsive Design
+========================================= */
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+        header {
+                padding: 15px 20px;
+        }
+
+        header h1 {
+                font-size: 22px;
+        }
+
+        nav {
+                gap: 12px;
+        }
+
+
+        /* About */
+
+        #about {
+                padding: 60px 30px;
+        }
+
+        .about-container {
+                flex-direction: column;
+
+                text-align: center;
+        }
+
+        .about-content {
+                max-width: 700px;
+        }
+
+        .about-buttons,
+        .social-links {
+                justify-content: center;
+        }
+
+        .about-image {
+                width: 300px;
+                height: 300px;
+        }
+
+
+        /* Skills */
+
+        #skills {
+                min-height: auto;
+
+                padding: 60px 25px;
+        }
+
+        .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        .skill-category:nth-child(1),
+        .skill-category:nth-child(2),
+        .skill-category:nth-child(3),
+        .skill-category:nth-child(4),
+        .skill-category:nth-child(5) {
+                grid-column: span 1;
+        }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+        header {
+                flex-direction: column;
+
+                gap: 15px;
+
+                padding: 15px;
+        }
+
+        header h1 {
+                font-size: 20px;
+
+                text-align: center;
+        }
+
+        nav {
+                gap: 10px;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+        }
+
+        nav a {
+                font-size: 14px;
+        }
+
+
+        /* Sections */
+
+        section {
+                padding: 50px 20px;
+        }
+
+
+        /* About */
+
+        #about {
+                padding: 60px 20px;
+        }
+
+        .about-content h2 {
+                font-size: 40px;
+        }
+
+        .about-content h3 {
+                font-size: 16px;
+        }
+
+        .about-content p {
+                font-size: 15px;
+        }
+
+        .about-buttons {
+                flex-direction: column;
+
+                align-items: center;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+                width: 100%;
+
+                justify-content: center;
+        }
+
+        .about-image {
+                width: 260px;
+                height: 260px;
+        }
+
+
+        /* Skills */
+
+        #skills {
+                min-height: auto;
+
+                padding: 50px 20px;
+        }
+
+        .skills-container {
+                grid-template-columns: 1fr;
+        }
+
+        .skill-category:nth-child(1),
+        .skill-category:nth-child(2),
+        .skill-category:nth-child(3),
+        .skill-category:nth-child(4),
+        .skill-category:nth-child(5) {
+                grid-column: span 1;
+        }
+
+
+        /* Projects */
+
+        .project-card {
+                width: 100%;
+                max-width: 400px;
+        }
+
+
+        /* Contact */
+
+        .contact-links {
+                gap: 15px;
+        }
+
+}
